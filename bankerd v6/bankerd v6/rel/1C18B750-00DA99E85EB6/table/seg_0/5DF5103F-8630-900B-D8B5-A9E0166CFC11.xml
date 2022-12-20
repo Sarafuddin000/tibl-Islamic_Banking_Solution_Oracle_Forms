@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DF5103F-8630-900B-D8B5-A9E0166CFC11" name="transaction_dtl">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:56:42 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="detail_id" id="C90BBF97-DC50-881F-4B3B-926FF82DF4C2">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 09:00:43 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Transaction_Id" id="D8E7A107-D90F-C435-A9DD-C54DEAA308BB">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:56:42 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BF8D9FC-7948-CC7C-70A6-1EB1DF5111DD" referredColumn="BE949D19-8B32-9789-ADD2-B0BA28AD7EE3"/>
+</associations>
+</Column>
+<Column name="Transactrion_Date" id="4301BD70-B7C1-6F10-513C-2D1CF17EFA3F">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:56:42 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_Id" id="2C802965-6F60-E58C-8AF4-A55EF5E18B35">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:56:42 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Current_balance" id="B2B098D6-6FA3-01E0-0FB3-F787754A3E3A">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:56:42 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="debit" id="8D833703-2B47-1786-CB8F-2B321F6706A8">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 09:00:43 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="credit" id="9BBF1149-4F25-12F5-0B6F-95D05B153918">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 09:03:49 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="486F428D-A41E-F27C-F929-60D5105D6B6A" name="transaction_dtl_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 09:37:18 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C90BBF97-DC50-881F-4B3B-926FF82DF4C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61E6574E-578C-411B-3467-E2432D4DB188" name="transaction_dtl_Transaction_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 09:02:38 UTC</createdTime>
+<ownerDesignName>bankerd v6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8E7A107-D90F-C435-A9DD-C54DEAA308BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
