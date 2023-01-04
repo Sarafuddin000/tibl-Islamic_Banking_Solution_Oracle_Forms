@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="bankerd v9" id="FAEABB1C-F76C-8D82-D41F-7C3FF63089DF" version="3.5">
+<createdBy>Admin</createdBy>
+<createdTime>2022-11-28 08:53:26 UTC</createdTime>
+<ownerDesignName>bankerd</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FAEABB1C-F76C-8D82-D41F-7C3FF63089DF</designId>
+</OSDM_Design>

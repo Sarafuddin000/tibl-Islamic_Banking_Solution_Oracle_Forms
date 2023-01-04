@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C42800-BA7C-3109-5109-BB57E6941396" name="loc_type">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-28 09:39:26 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="loctyp_id" id="3CD2E9DC-FDEE-4034-40DB-6F40FD5AF185">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-28 09:40:16 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loctyp_name" id="CFE8E7C8-5C68-D7B2-598D-52FE328AF933">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-28 09:40:16 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4664219-54A2-85D6-2EF9-8739522BE110" name="loc_type_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-28 09:43:23 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CD2E9DC-FDEE-4034-40DB-6F40FD5AF185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
