@@ -293,7 +293,6 @@ BEGIN
     END IF;
 END;
 
-
 CREATE OR REPLACE TRIGGER TRG_TRANSACTION
     BEFORE INSERT OR UPDATE
     ON TRANSACTION
@@ -301,14 +300,33 @@ CREATE OR REPLACE TRIGGER TRG_TRANSACTION
     FOR EACH ROW
 DECLARE
     v_Transaction_id NUMBER;
+    v_Transaction_sl NUMBER;
+
 BEGIN
-    IF INSERTING
-    THEN
-        SELECT NVL (MAX (Transaction_id), 0) + 1 INTO v_Transaction_id FROM TRANSACTION;
+    IF INSERTING THEN
+        SELECT NVL (MAX (Transaction_sl), 0) + 1 INTO v_Transaction_sl from transaction;
+        :NEW.Transaction_sl  := v_Transaction_sl;
+        v_Transaction_id := to_number(to_char(sysdate, 'mmyyss'))+v_Transaction_sl;
         :NEW.Transaction_id  := v_Transaction_id;
-        :NEW.TIME_STAMP := TO_DATE (TO_CHAR (SYSDATE, 'DDMMYYHH24:MI:SS'),'DDMMYYHH24:MI:SS');
+
+        :NEW.INSERT_DATE := TO_DATE (TO_CHAR (SYSDATE, 'DDMMYYHH24:MI:SS'),'DDMMYYHH24:MI:SS');
     ELSIF UPDATING    THEN
-        :NEW.MODIFY_DATE :=TO_DATE (TO_CHAR (SYSDATE, 'DDMMYYHH24:MI:SS'), 'DDMMYYHH24:MI:SS');
+        :NEW.UPDATE_DATE :=TO_DATE (TO_CHAR (SYSDATE, 'DDMMYYHH24:MI:SS'), 'DDMMYYHH24:MI:SS');
     END IF;
 END;
 
+
+
+------------------------------------------------
+declare 
+v_count number;
+begin
+  select count(1) into v_count from HOLIDAY_LIST where '21-FEB-2023' = to_char(holiday_date, 'DD-MON-YYYY');
+  if v_count => 1 ThEn 
+    dbms_output.put_line(SYSDATE||' is a holiday!');
+  elsif
+----Code Here
+  end if;
+   dbms_output.put_line(v_count);
+end;
+/

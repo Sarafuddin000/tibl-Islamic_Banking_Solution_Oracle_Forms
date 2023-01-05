@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Transaction_sl" id="582C4811-AD4F-151A-ADEB-7C7233EDDBED">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-05 09:38:32 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="Transaction_Id" id="BE949D19-8B32-9789-ADD2-B0BA28AD7EE3">
 <createdBy>New</createdBy>
 <createdTime>2022-12-05 07:57:34 UTC</createdTime>
