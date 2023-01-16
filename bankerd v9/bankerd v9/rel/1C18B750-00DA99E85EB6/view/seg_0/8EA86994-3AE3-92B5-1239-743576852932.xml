@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="8EA86994-3AE3-92B5-1239-743576852932" name="statement">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:45:37 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<ordsAlias>view_2</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    account_master.account_id,
+    account_master.account_number,
+    account_master.account_name,
+    transaction_log.transaction_id,
+    transaction_log.transaction_type,
+    transaction_log.transactrion_date,
+    transaction_log.branch_code,
+    transaction_log.amount,
+    transaction_log.dr_amount,
+    transaction_log.cr_amount
+FROM
+    account_master,
+    transaction_log
+WHERE
+    account_master.account_id = transaction_log.account_id]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="account_id" id="5D3161BD-5E4A-5D8F-394A-DDED81748196">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>account_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>2C8A44C8-B36A-F1ED-F5F6-D25F86FB141D</referencedColumn>
+<tableAlias>account_master</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="account_number" id="1551794A-3CA4-59D2-FD0C-9EB144FF7B6F">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<headerAlias>account_number</headerAlias>
+<reference>false</reference>
+<referencedColumn>B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B</referencedColumn>
+<tableAlias>account_master</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="account_name" id="406B7452-C263-5081-E138-EF09CE8E0658">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>account_name</headerAlias>
+<reference>false</reference>
+<referencedColumn>4ADF525B-E364-F65F-6250-D6AD28BD7C9D</referencedColumn>
+<tableAlias>account_master</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="transaction_id" id="2CCB74D9-0360-D285-EEC4-ABE2D62F4EF1">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (10)</dataType>
+<headerAlias>transaction_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>57C3F9FC-F7BA-CC2E-0BD9-D2FDC1FAC24B</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="transaction_type" id="8C5DFD2D-BFC4-6FF6-B38B-2D2DC89CE0A4">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>transaction_type</headerAlias>
+<reference>false</reference>
+<referencedColumn>8EC8E133-91B9-3C4D-33D5-26B7A2C191FD</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="transactrion_date" id="86ADFD00-7750-D532-0481-03EC61CC0DD8">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<headerAlias>transactrion_date</headerAlias>
+<reference>false</reference>
+<referencedColumn>1146A55D-A6F9-8DBC-DA8C-761C7F93B678</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="branch_code" id="775A066E-D1A6-2BFA-CD26-546D27A10309">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>branch_code</headerAlias>
+<reference>false</reference>
+<referencedColumn>C6A35A63-3C27-C9DA-6B4A-99F4274AC707</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="amount" id="E899D4C3-4EC1-A022-2A9A-14A919648864">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>amount</headerAlias>
+<reference>false</reference>
+<referencedColumn>CCF64B06-126E-F1DE-4A96-ED39B240A517</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="dr_amount" id="0D74ABBA-60F0-62D4-C1CA-AC706CD54D43">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>dr_amount</headerAlias>
+<reference>false</reference>
+<referencedColumn>24F555AF-8999-8C89-B5E4-CE435F0A1692</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cr_amount" id="631ED3D1-6054-4B6A-7C9A-8C267AC6D3FE">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 08:59:53 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>cr_amount</headerAlias>
+<reference>false</reference>
+<referencedColumn>BDD53853-18A7-04B7-5898-81CE2A9007F7</referencedColumn>
+<tableAlias>transaction_log</tableAlias>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B7E754FC-104F-3339-2A92-E631C38256B6">
+<container>true</container>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6AE0CB4F-8070-3627-464B-4C85FABB52BD">
+<container>true</container>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2C8A44C8-B36A-F1ED-F5F6-D25F86FB141D">
+<columnName>account_id</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B">
+<columnName>account_number</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4ADF525B-E364-F65F-6250-D6AD28BD7C9D">
+<columnName>Account_name</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="57C3F9FC-F7BA-CC2E-0BD9-D2FDC1FAC24B">
+<columnName>Transaction_Id</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8EC8E133-91B9-3C4D-33D5-26B7A2C191FD">
+<columnName>Transaction_type</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1146A55D-A6F9-8DBC-DA8C-761C7F93B678">
+<columnName>Transactrion_Date</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C6A35A63-3C27-C9DA-6B4A-99F4274AC707">
+<columnName>Branch_code</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CCF64B06-126E-F1DE-4A96-ED39B240A517">
+<columnName>Amount</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="24F555AF-8999-8C89-B5E4-CE435F0A1692">
+<columnName>Dr_amount</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BDD53853-18A7-04B7-5898-81CE2A9007F7">
+<columnName>Cr_Amount</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="887EA63B-F5AF-03E3-2CBD-2B6252290975">
+<columnName>Account_Id</columnName>
+<tableName>Transaction_log</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

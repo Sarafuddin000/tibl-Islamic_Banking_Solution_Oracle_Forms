@@ -18,7 +18,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="branch_id" id="319C6F9A-7157-1049-0FD7-F73FF904DCD8">
+<Column name="branch_code" id="319C6F9A-7157-1049-0FD7-F73FF904DCD8">
 <createdBy>Admin</createdBy>
 <createdTime>2022-12-05 08:49:05 UTC</createdTime>
 <ownerDesignName>bankerd v9</ownerDesignName>
@@ -28,6 +28,9 @@
 <dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED7A420D-C98C-7DDA-BBDD-F48C2F8BCFA8" referredColumn="5C0B3F51-B093-5770-182F-0462C9713385"/>
+</associations>
 </Column>
 <Column name="open_time" id="942918B9-4FD4-351C-1F07-53CC43489B95">
 <createdBy>Admin</createdBy>
@@ -118,6 +121,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2B2DDC14-F8A8-0519-C905-8E0AD4F4457A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3030268-2EB5-6BC5-D601-5BA0FEB19C6A" name="branch_opn_cls_Brnch_inf_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-09 12:52:01 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="319C6F9A-7157-1049-0FD7-F73FF904DCD8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

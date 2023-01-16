@@ -72,7 +72,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="23F2621B-C8FB-2CC6-012C-B2FBB7C79A97" referredColumn="9BA08A21-D851-7F3B-AB7F-6E43F5256CAB"/>
@@ -103,17 +103,6 @@
 <Column name="acc_open_amt" id="30CE305A-0B31-86CA-9899-5564ABA0A663">
 <createdBy>Admin</createdBy>
 <createdTime>2022-12-05 08:32:36 UTC</createdTime>
-<ownerDesignName>bankerd v9</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Current_balance" id="598E7E48-DCB6-74FE-9DF5-4C55E14C9AF0">
-<createdBy>New</createdBy>
-<createdTime>2022-12-05 07:42:29 UTC</createdTime>
 <ownerDesignName>bankerd v9</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

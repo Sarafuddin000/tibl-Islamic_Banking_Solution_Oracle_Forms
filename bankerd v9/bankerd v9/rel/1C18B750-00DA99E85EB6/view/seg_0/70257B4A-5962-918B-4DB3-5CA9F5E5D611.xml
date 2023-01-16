@@ -1,0 +1,357 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="70257B4A-5962-918B-4DB3-5CA9F5E5D611" name="Acc_summery">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:41:38 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    account_master.account_number,
+    account_master.account_name,
+    account_master.client_id,
+    client_info.client_name,
+    client_signature.client_photo,
+    client_signature.client_sign,
+    nominee_info.nominee_name,
+    nominee_info.nominee_photo,
+    client_info.client_phone,
+    account_master.profit_rate,
+    account_master.account_open_date,
+    client_info.client_dob,
+    client_info.present_address_id,
+    client_info.permanent_address_id,
+    nominee_info.nominee_relation,
+    nominee_info.nominee_phone,
+    client_info.client_id_type,
+    client_info.client_id_number
+FROM
+         account_master
+    INNER JOIN client_info ON client_info.client_id = account_master.client_id
+    INNER JOIN client_signature ON client_info.client_id = client_signature.client_id
+    INNER JOIN nominee_info ON account_master.account_id = nominee_info.account_id]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="account_number" id="07C76EA0-E848-BEFF-1003-7C43DD2B929E">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<headerAlias>account_number</headerAlias>
+<reference>false</reference>
+<referencedColumn>B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B</referencedColumn>
+<table>B7E754FC-104F-3339-2A92-E631C38256B6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="account_name" id="83F2E755-F752-36B9-A5CF-66F9B48C6C35">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>account_name</headerAlias>
+<reference>false</reference>
+<referencedColumn>4ADF525B-E364-F65F-6250-D6AD28BD7C9D</referencedColumn>
+<table>B7E754FC-104F-3339-2A92-E631C38256B6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_id" id="237072EA-B84D-FCB9-1AF0-6D3DA20B262F">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<headerAlias>client_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>AB6B80FA-82BD-3A27-9B9A-A755484967D3</referencedColumn>
+<table>B7E754FC-104F-3339-2A92-E631C38256B6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_name" id="497D5C65-71D4-902A-91C3-F3073CBECED3">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>client_name</headerAlias>
+<reference>false</reference>
+<referencedColumn>AAFEE99F-1236-8937-1CE4-A0ABBEC5B5BA</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_photo" id="66461AEE-D05C-9D4F-7615-89A5AA06C8BB">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>BLOB</dataType>
+<headerAlias>client_photo</headerAlias>
+<reference>false</reference>
+<referencedColumn>B219FE97-56A6-FA5D-691B-9F44D67F7DB4</referencedColumn>
+<table>FBA9541A-2BBE-B33D-8394-C523BB030609</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_sign" id="F2FDB0DB-B386-7E36-1599-B14FB9DBE440">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>BLOB</dataType>
+<headerAlias>client_sign</headerAlias>
+<reference>false</reference>
+<referencedColumn>5FE08723-94A8-B0B0-FB8E-EDD06B927676</referencedColumn>
+<table>FBA9541A-2BBE-B33D-8394-C523BB030609</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nominee_name" id="F849500D-6535-FF2F-1A5A-8684E7453CCA">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>nominee_name</headerAlias>
+<reference>false</reference>
+<referencedColumn>3B596E11-7C2E-C955-EE0B-C117913EC0B6</referencedColumn>
+<table>908E45F9-05DB-7137-C121-A22DA8ADFF0A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nominee_photo" id="8D179B3E-B791-F8E9-F121-47557390D00D">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>BLOB</dataType>
+<headerAlias>nominee_photo</headerAlias>
+<reference>false</reference>
+<referencedColumn>5EBDD203-9CE2-BCA3-7AD2-1C940505500F</referencedColumn>
+<table>908E45F9-05DB-7137-C121-A22DA8ADFF0A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_phone" id="9667FDB9-7EFA-22FB-FBC8-82F498366E6C">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (11)</dataType>
+<headerAlias>client_phone</headerAlias>
+<reference>false</reference>
+<referencedColumn>FF70302E-AC85-E8F0-C004-58877C863734</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="profit_rate" id="22D2E61D-EB95-9DAA-7E19-E06B2CC3AF9E">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>profit_rate</headerAlias>
+<reference>false</reference>
+<referencedColumn>23044E5D-A74B-FAE2-C809-1BA94D11CFFE</referencedColumn>
+<table>B7E754FC-104F-3339-2A92-E631C38256B6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="account_open_date" id="4DD3D23B-25C0-3AEE-7270-609EFC560B80">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<headerAlias>account_open_date</headerAlias>
+<reference>false</reference>
+<referencedColumn>C2A353BB-9121-6889-8F86-C08E9968F89F</referencedColumn>
+<table>B7E754FC-104F-3339-2A92-E631C38256B6</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_dob" id="68FFA392-BE26-1E86-84AF-4EDBE127D054">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<headerAlias>client_dob</headerAlias>
+<reference>false</reference>
+<referencedColumn>A4BD11FE-F1C2-2A96-168A-28AFC4A4E1AC</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="present_address_id" id="A4096E01-53E0-8554-2521-DA7AD9A6C187">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>present_address_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>E255F24C-D056-5EC1-7971-EE60FBC1A324</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="permanent_address_id" id="1954A16D-5879-8989-4F6E-CD849EBE5391">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>permanent_address_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>2E69B0FD-A18B-A9E5-E714-2CC12971D249</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nominee_relation" id="04422CB2-C975-B7C5-C12D-CC42D3EF3C1C">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>nominee_relation</headerAlias>
+<reference>false</reference>
+<referencedColumn>268F0161-91EF-0C05-1D8A-395737FE4B87</referencedColumn>
+<table>908E45F9-05DB-7137-C121-A22DA8ADFF0A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nominee_phone" id="3962B642-DA93-01E9-B6C6-EC56EEDC257D">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>nominee_phone</headerAlias>
+<reference>false</reference>
+<referencedColumn>181F857C-299A-3CD8-9EA5-C46F99950F58</referencedColumn>
+<table>908E45F9-05DB-7137-C121-A22DA8ADFF0A</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_id_type" id="1289C9D3-8B44-9C33-DCFB-68585A0B8546">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (20)</dataType>
+<headerAlias>client_id_type</headerAlias>
+<reference>false</reference>
+<referencedColumn>34457DB7-B3A1-9507-6D3C-AC33FDB19373</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="client_id_number" id="846A8415-C2EA-4396-7ABD-C66B6DE93A65">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-08 12:52:50 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>client_id_number</headerAlias>
+<reference>false</reference>
+<referencedColumn>A9587097-E2AB-EDB2-EF9A-C37DCA264643</referencedColumn>
+<table>588B36D9-6388-6A74-9B74-2A83147AF91B</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B7E754FC-104F-3339-2A92-E631C38256B6">
+<container>true</container>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="588B36D9-6388-6A74-9B74-2A83147AF91B">
+<container>true</container>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FBA9541A-2BBE-B33D-8394-C523BB030609">
+<container>true</container>
+<tableName>Client_signature</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="908E45F9-05DB-7137-C121-A22DA8ADFF0A">
+<container>true</container>
+<tableName>Nominee_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B">
+<columnName>account_number</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4ADF525B-E364-F65F-6250-D6AD28BD7C9D">
+<columnName>Account_name</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AB6B80FA-82BD-3A27-9B9A-A755484967D3">
+<columnName>Client_id</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AAFEE99F-1236-8937-1CE4-A0ABBEC5B5BA">
+<columnName>Client_name</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B219FE97-56A6-FA5D-691B-9F44D67F7DB4">
+<columnName>client_photo</columnName>
+<tableName>Client_signature</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5FE08723-94A8-B0B0-FB8E-EDD06B927676">
+<columnName>client_sign</columnName>
+<tableName>Client_signature</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3B596E11-7C2E-C955-EE0B-C117913EC0B6">
+<columnName>Nominee_name</columnName>
+<tableName>Nominee_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5EBDD203-9CE2-BCA3-7AD2-1C940505500F">
+<columnName>Nominee_photo</columnName>
+<tableName>Nominee_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FF70302E-AC85-E8F0-C004-58877C863734">
+<columnName>Client_Phone</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="23044E5D-A74B-FAE2-C809-1BA94D11CFFE">
+<columnName>profit_rate</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C2A353BB-9121-6889-8F86-C08E9968F89F">
+<columnName>account_open_date</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A4BD11FE-F1C2-2A96-168A-28AFC4A4E1AC">
+<columnName>client_dob</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E255F24C-D056-5EC1-7971-EE60FBC1A324">
+<columnName>present_address_id</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2E69B0FD-A18B-A9E5-E714-2CC12971D249">
+<columnName>permanent_address_id</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="268F0161-91EF-0C05-1D8A-395737FE4B87">
+<columnName>Nominee_relation</columnName>
+<tableName>Nominee_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="181F857C-299A-3CD8-9EA5-C46F99950F58">
+<columnName>Nominee_phone</columnName>
+<tableName>Nominee_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="34457DB7-B3A1-9507-6D3C-AC33FDB19373">
+<columnName>Client_ID_type</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A9587097-E2AB-EDB2-EF9A-C37DCA264643">
+<columnName>client_ID_number</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B870CD46-6160-F5A4-0AA9-AE4F85DD3DAA">
+<columnName>Client_id</columnName>
+<tableName>Client_signature</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A5B833D0-AC34-3C3B-9F28-446B42C08061">
+<columnName>Account_id</columnName>
+<tableName>Nominee_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9BA08A21-D851-7F3B-AB7F-6E43F5256CAB">
+<columnName>client_id</columnName>
+<tableName>Client_info</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2C8A44C8-B36A-F1ED-F5F6-D25F86FB141D">
+<columnName>account_id</columnName>
+<tableName>Account_master</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>
