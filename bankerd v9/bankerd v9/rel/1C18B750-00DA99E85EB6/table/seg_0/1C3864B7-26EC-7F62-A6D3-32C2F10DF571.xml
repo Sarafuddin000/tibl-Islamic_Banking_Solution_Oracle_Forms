@@ -30,20 +30,6 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="branch_code" id="C4AA160C-5A7A-4F6A-1C46-EF085F80D96E">
-<createdBy>Admin</createdBy>
-<createdTime>2023-01-09 12:53:09 UTC</createdTime>
-<ownerDesignName>bankerd v9</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="021917A9-5266-621F-A6C5-A7CDD5322AF0" referredColumn="5C0B3F51-B093-5770-182F-0462C9713385"/>
-</associations>
-</Column>
 <Column name="Insert_by" id="EA35E921-5222-B6ED-A1D1-C9642C77753A">
 <createdBy>Admin</createdBy>
 <createdTime>2022-12-20 09:48:16 UTC</createdTime>
@@ -113,16 +99,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8D5722BE-FCA2-7311-85FD-77D24CB6D6D3"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="33B79141-C42F-C908-B2BA-D8E83743EAB7" name="Account_type_Branch_info_FK">
-<createdBy>Admin</createdBy>
-<createdTime>2023-01-09 12:53:09 UTC</createdTime>
-<ownerDesignName>bankerd v9</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="C4AA160C-5A7A-4F6A-1C46-EF085F80D96E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

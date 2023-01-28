@@ -32,10 +32,22 @@
 <colAssociation fkAssociation="ED7A420D-C98C-7DDA-BBDD-F48C2F8BCFA8" referredColumn="5C0B3F51-B093-5770-182F-0462C9713385"/>
 </associations>
 </Column>
+<Column name="open_date" id="D276AD05-739A-0CE8-290A-D099CDC7D556">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-24 10:44:28 UTC</createdTime>
+<ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="open_time" id="942918B9-4FD4-351C-1F07-53CC43489B95">
 <createdBy>Admin</createdBy>
 <createdTime>2022-12-05 08:49:05 UTC</createdTime>
 <ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -46,6 +58,7 @@
 <createdBy>Admin</createdBy>
 <createdTime>2022-12-05 08:49:05 UTC</createdTime>
 <ownerDesignName>bankerd v9</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
