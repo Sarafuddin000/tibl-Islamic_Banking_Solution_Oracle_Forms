@@ -1,0 +1,15 @@
+BEGIN
+IF 
+:GLOBAL.IS_BEAN_REGISTER = 'false' THEN
+   FBean.Register_Bean('STUDENTS_MST.IMAGEPICKER',1,'oracle.forms.fd.GetImageFileName');
+  :GLOBAL.IS_BEAN_REGISTER := 'false';
+END IF;
+
+:STUDENTS_MST.IMAGE_LINK := FBean.Invoke_char('STUDENTS_MST.IMAGEPICKER',1,'GetFile','"SELECT","G:\FORMS_PRACTICE\CUST_IMAGE\"');
+read_image_file(:STUDENTS_MST.IMAGE_LINK,'jpg','STUDENTS_MST.STUDENT_IMAGE');
+
+exception
+when others then
+message('Error Found '||SQLERRM);
+
+END;

@@ -1,0 +1,60 @@
+;;; 
+Export: Release 12.2.0.1.0 - Production on Wed Jan 25 16:51:04 2023
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 12c Standard Edition Release 12.2.0.1.0 - 64bit Production
+Starting "SYS"."SYS_EXPORT_SCHEMA_01":  sys/******** AS SYSDBA directory=DB_BACKUP_DIR schemas=SUMMIT dumpfile=summit.dmp logfile=summit.log; 
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/STATISTICS/MARKER
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+>>> DBMS_AW_EXP: SYS.AW$EXPRESS: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWMD: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWCREATE: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWCREATE10G: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWXML: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWREPORT: OLAP not enabled
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+>>> DBMS_AW_EXP: SYS.AW$EXPRESS: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWMD: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWCREATE: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWCREATE10G: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWXML: OLAP not enabled
+>>> DBMS_AW_EXP: SYS.AW$AWREPORT: OLAP not enabled
+. . exported "SUMMIT"."PRODUCT_DESCRIPTIONS"             2.080 MB    8634 rows
+. . exported "SUMMIT"."PRODUCT_INFORMATION"              71.37 KB     288 rows
+. . exported "SUMMIT"."CUST"                             37.17 KB     320 rows
+. . exported "SUMMIT"."CUSTOMERS"                        36.53 KB     319 rows
+. . exported "SUMMIT"."ORDER_ITEMS"                      21.04 KB     666 rows
+. . exported "SUMMIT"."INVENTORIES"                      21.77 KB    1112 rows
+. . exported "SUMMIT"."EMPLOYEES"                        17.09 KB     107 rows
+. . exported "SUMMIT"."EMP"                              14.85 KB     110 rows
+. . exported "SUMMIT"."HOLIDAY_LIST"                     14.29 KB     131 rows
+. . exported "SUMMIT"."ORDERS"                           12.20 KB     106 rows
+. . exported "SUMMIT"."EMP_LOG"                          8.679 KB       1 rows
+. . exported "SUMMIT"."LOCATIONS"                        8.437 KB      23 rows
+. . exported "SUMMIT"."JOB_HISTORY"                      7.195 KB      10 rows
+. . exported "SUMMIT"."JOBS"                             7.109 KB      19 rows
+. . exported "SUMMIT"."DEPARTMENTS"                      7.125 KB      27 rows
+. . exported "SUMMIT"."COUNTRIES"                        6.375 KB      25 rows
+. . exported "SUMMIT"."WAREHOUSES"                       6.203 KB       9 rows
+. . exported "SUMMIT"."TEST_USERS"                       6.054 KB       8 rows
+. . exported "SUMMIT"."JOB_GRADES"                       6.085 KB       6 rows
+. . exported "SUMMIT"."REGIONS"                          5.546 KB       4 rows
+Master table "SYS"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYS.SYS_EXPORT_SCHEMA_01 is:
+  E:\1270389\GIT\TIBL\DBDMP\SUMMIT.DMP
+Job "SYS"."SYS_EXPORT_SCHEMA_01" successfully completed at Wed Jan 25 16:51:40 2023 elapsed 0 00:00:26
