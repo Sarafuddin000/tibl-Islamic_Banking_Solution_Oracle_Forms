@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="363A2D8A-FEA4-0DA1-2ABF-71513BCB4130" containerWithKeyObject="588B36D9-6388-6A74-9B74-2A83147AF91B" localFKIndex="90AE0D17-0FF1-7ECE-39C0-5555FD297FB6" name="Client_info_Loc_permanent_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-01-04 10:48:00 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<referredTableLongName>Loc_tree</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5E160BB1-1107-3BC7-4BCD-9A275EFA91D4</referredTableID>
+<keyObject>11B529EF-B4C0-0A37-D82E-31948596DC76</keyObject>
+<referredKeyID>11B529EF-B4C0-0A37-D82E-31948596DC76</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>loc_sl</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

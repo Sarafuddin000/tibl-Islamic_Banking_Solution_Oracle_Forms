@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF9C4DF1-B6B9-34F3-1A1A-B03BAAAA0E26" name="Holiday_list">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:12:28 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="holiday_id" id="0BF198B1-25BC-881F-7231-114A054E6FF4">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:14:45 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="holiday_date" id="A5BDE47D-509A-4960-97A4-E7A30E22E34E">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:14:45 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="holiday_reason" id="EB0F31B8-16E1-FB43-B71E-60D70DCB67BC">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:14:45 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="holiday_type" id="E741DF84-2A7B-DD1F-1A9F-9C22D5682528">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:14:45 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Insert_by" id="E0103A34-195F-045A-6FED-8229433D83A8">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:15:13 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Insert_date" id="5AA9EF7E-866F-07FD-78D6-14AA10138F08">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:15:13 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Update_by" id="AC229D9F-A442-44C7-D7E2-DAA11DA2E217">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:15:13 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Update_date" id="FFD0222D-1464-7F0D-31A3-1D2AD3C0A371">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:15:13 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status" id="9C3A9171-468B-9D9F-1552-57CEE72F693E">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:15:13 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D8E65D1-8ED2-34B5-FE3C-F3E73C24DE1A" name="Holiday_list_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-27 09:14:45 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BF198B1-25BC-881F-7231-114A054E6FF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

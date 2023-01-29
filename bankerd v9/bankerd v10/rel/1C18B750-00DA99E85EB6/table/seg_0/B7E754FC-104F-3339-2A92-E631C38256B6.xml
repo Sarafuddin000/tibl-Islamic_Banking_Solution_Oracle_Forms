@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7E754FC-104F-3339-2A92-E631C38256B6" name="Account_master">
+<createdBy>Admin</createdBy>
+<createdTime>2022-11-29 09:09:52 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="account_id" id="2C8A44C8-B36A-F1ED-F5F6-D25F86FB141D">
+<createdBy>Admin</createdBy>
+<createdTime>2022-11-29 09:28:14 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="account_type_id" id="85E8CE03-B8D4-263C-5D68-C4C4737B9AF1">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-20 09:23:36 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D0C9740-44AE-3319-E980-4D8F44B191E7" referredColumn="8D5722BE-FCA2-7311-85FD-77D24CB6D6D3"/>
+</associations>
+</Column>
+<Column name="account_number" id="B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B">
+<createdBy>Admin</createdBy>
+<createdTime>2022-11-29 09:28:14 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Account_name" id="4ADF525B-E364-F65F-6250-D6AD28BD7C9D">
+<createdBy>Orbit</createdBy>
+<createdTime>2022-12-20 18:29:48 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="account_open_date" id="C2A353BB-9121-6889-8F86-C08E9968F89F">
+<createdBy>Admin</createdBy>
+<createdTime>2022-11-29 09:28:14 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_id" id="AB6B80FA-82BD-3A27-9B9A-A755484967D3">
+<createdBy>New</createdBy>
+<createdTime>2022-12-05 07:42:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23F2621B-C8FB-2CC6-012C-B2FBB7C79A97" referredColumn="9BA08A21-D851-7F3B-AB7F-6E43F5256CAB"/>
+</associations>
+</Column>
+<Column name="profit_rate" id="23044E5D-A74B-FAE2-C809-1BA94D11CFFE">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-26 09:28:51 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Active_status" id="AD6208E5-4ACB-1E3D-677D-17AA7BC2C3B8">
+<createdBy>New</createdBy>
+<createdTime>2022-12-05 07:42:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_open_amt" id="30CE305A-0B31-86CA-9899-5564ABA0A663">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:32:36 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Close_date" id="DE1B236D-5E1D-EE55-C405-D536AD6CB9E0">
+<createdBy>New</createdBy>
+<createdTime>2022-12-05 07:42:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Insert_by" id="B86FF6F4-136C-5DEF-7A9E-0879661F6F0E">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-19 08:52:38 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Insert_date" id="02BAD087-A82C-69B1-08EB-03BB0DF8CF9D">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-19 08:52:38 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Update_by" id="A2C3E4E7-1B57-D669-75FF-7B25CCBF8E55">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-19 08:52:38 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Update_date" id="38F33AC9-CE23-D810-86BB-C258304C7ED9">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-19 08:52:38 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status" id="ECADF8DE-8F3F-C827-2191-068E92F5F63F">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-19 08:52:38 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B6B08F8-895A-DAE3-B624-37EC47136F2E" name="Account_master_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-11-29 09:28:14 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3B56ED6-BFE7-26E6-AFD4-F9A52944D1ED" name="Account_master_Client_info_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-05 08:33:54 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB6B80FA-82BD-3A27-9B9A-A755484967D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FAB0D4C-E839-E85E-1F68-18EF8FA22A48" name="Account_master_Account_type_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2022-12-20 09:24:06 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85E8CE03-B8D4-263C-5D68-C4C4737B9AF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
