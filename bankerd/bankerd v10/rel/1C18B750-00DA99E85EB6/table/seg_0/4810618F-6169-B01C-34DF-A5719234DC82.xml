@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SL_no" id="AFF910C3-60ED-BF68-3D24-D113270D8D80">
+<createdBy>Admin</createdBy>
+<createdTime>2023-02-08 09:48:43 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="GL_code" id="068A607D-5A5B-8816-E302-D24B4B20E5E1">
 <createdBy>Admin</createdBy>
 <createdTime>2023-02-01 11:30:35 UTC</createdTime>
@@ -17,6 +27,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBE8E6DD-BD1D-3FAA-872F-2167B35F22DE" referredColumn="9BC334FA-16B0-5158-4FB3-759DD830E585"/>
+</associations>
 </Column>
 <Column name="L_Dr_Amt" id="1DCF055B-CB23-ADBC-DEC2-88818DCC4BAE">
 <createdBy>Admin</createdBy>
@@ -40,9 +53,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="L_Balance" id="48E1E65B-D02D-7115-4BCA-7E81C1512CF7">
+<Column name="L_Dr_Balance" id="48E1E65B-D02D-7115-4BCA-7E81C1512CF7">
 <createdBy>Admin</createdBy>
 <createdTime>2023-02-01 11:34:09 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="L_Cr_Balance" id="2A26E8AC-C9BA-0D68-10CC-4CD3B78D838C">
+<createdBy>Admin</createdBy>
+<createdTime>2023-02-08 09:49:28 UTC</createdTime>
 <ownerDesignName>bankerd v10</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,4 +87,27 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B46D67E-EA55-2FE5-043F-AD0ACA9928BD" name="Ledger_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-02-08 09:48:43 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFF910C3-60ED-BF68-3D24-D113270D8D80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E5FDDFA-7998-AC0C-C48A-8D83F0137B59" name="Ledger_Chart_of_account_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-02-08 10:55:11 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="068A607D-5A5B-8816-E302-D24B4B20E5E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>
