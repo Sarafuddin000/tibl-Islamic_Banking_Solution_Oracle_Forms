@@ -61,7 +61,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="55564FE0-B81C-0E5D-C390-7F097991463E" referredColumn="FF79912A-046C-846A-CF06-FF6ABB4A3FB5"/>
+<colAssociation fkAssociation="DA2FFC83-CA2E-1E92-2161-F15A3C8A8CF6" referredColumn="FF79912A-046C-846A-CF06-FF6ABB4A3FB5"/>
 </associations>
 </Column>
 <Column name="Nominee_phone" id="181F857C-299A-3CD8-9EA5-C46F99950F58">
@@ -227,9 +227,9 @@
 <colUsage columnID="A5B833D0-AC34-3C3B-9F28-446B42C08061"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2D9FC320-142B-8751-8532-3F39A1B0F984" name="Nominee_info_Loc_tree_FK">
+<ind_PK_UK id="D3E0ECB8-E05C-4D35-6DAA-2BBF763001C3" name="Nominee_info_Loc_tree_FK">
 <createdBy>Admin</createdBy>
-<createdTime>2023-01-04 10:58:15 UTC</createdTime>
+<createdTime>2023-02-08 10:55:51 UTC</createdTime>
 <ownerDesignName>bankerd v10</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
