@@ -1,0 +1,13 @@
+Compiling WHEN-BUTTON-PRESSED trigger on BTN_SAVE item in CTRL data block...
+Compilation error on WHEN-BUTTON-PRESSED trigger on BTN_SAVE item in CTRL data block:
+PL/SQL ERROR 0 at line 0, column 0
+ORA-01041: internal error. hostdef extension doesn't exist
+
+
+Compiling POST-CHANGE trigger on ACCOUNT_NUMBER item in TRANSACTION data block...
+Compilation error on POST-CHANGE trigger on ACCOUNT_NUMBER item in TRANSACTION data block:
+PL/SQL ERROR 0 at line 0, column 0
+ORA-01041: internal error. hostdef extension doesn't exist
+
+
+Compilation errors have occurred.
