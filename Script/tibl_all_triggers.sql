@@ -308,7 +308,8 @@ BEGIN
         :NEW.Transaction_sl  := v_Transaction_sl;
         v_Transaction_id := to_number(to_char(sysdate, 'mmyyss'))+v_Transaction_sl;
         :NEW.Transaction_id  := v_Transaction_id;
-
+        
+        
         :NEW.INSERT_DATE := TO_DATE (TO_CHAR (SYSDATE, 'DDMMYYHH24:MI:SS'),'DDMMYYHH24:MI:SS');
     ELSIF UPDATING    THEN
         :NEW.UPDATE_DATE :=TO_DATE (TO_CHAR (SYSDATE, 'DDMMYYHH24:MI:SS'), 'DDMMYYHH24:MI:SS');
@@ -321,7 +322,7 @@ END;
 declare 
 v_count number;
 begin
-  select count(1) into v_count from HOLIDAY_LIST where '21-FEB-2023' = to_char(holiday_date, 'DD-MON-YYYY');
+  select count(1) into v_count from HOLIDAY_LIST where trunc(holiday_date) = trunc(sysdate);
   if v_count => 1 ThEn 
     dbms_output.put_line(SYSDATE||' is a holiday!');
   elsif
