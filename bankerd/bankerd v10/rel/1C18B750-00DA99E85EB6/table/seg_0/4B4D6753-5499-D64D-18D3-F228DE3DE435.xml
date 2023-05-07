@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B4D6753-5499-D64D-18D3-F228DE3DE435" name="Project_revenue">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:40:48 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prj_rev_id" id="26CEC1B0-3AE4-0CC8-1FDC-8A979CE381FB">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:46:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project_id" id="FD078515-54FA-2C79-DFAA-98FDD1016F38">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:46:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB73C950-2454-244E-D4AE-B616015C0EEF" referredColumn="F56F0686-C391-8CE4-2A03-A75411D425D0"/>
+</associations>
+</Column>
+<Column name="project_revenue" id="45443CC0-7062-0510-D516-360122E1DAC0">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:46:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="transaction_date" id="E91077B2-DD06-12ED-99CE-9CCBA5B5F749">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:46:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3761197A-3BE9-4C8A-438B-A78294BD5221" name="Project_revenue_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:46:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26CEC1B0-3AE4-0CC8-1FDC-8A979CE381FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A37BE9A9-A9FC-7CAB-19F0-A94D47C58CDD" name="Project_revenue_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 09:46:29 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD078515-54FA-2C79-DFAA-98FDD1016F38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

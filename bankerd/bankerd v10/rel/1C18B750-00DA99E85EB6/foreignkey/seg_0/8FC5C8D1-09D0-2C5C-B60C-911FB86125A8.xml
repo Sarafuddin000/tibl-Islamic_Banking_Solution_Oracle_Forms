@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8FC5C8D1-09D0-2C5C-B60C-911FB86125A8" containerWithKeyObject="4E462805-7098-992D-7B26-05462C9A1F51" localFKIndex="F9B91398-91E7-0737-CA42-77D7BFCAD466" name="Transaction_Project_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 11:07:44 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<referredTableLongName>Project</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D062C428-856C-9117-3B70-8963E3D72B5C</referredTableID>
+<keyObject>E369AE52-C48A-6677-659E-8C8203CBAB48</keyObject>
+<referredKeyID>E369AE52-C48A-6677-659E-8C8203CBAB48</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>project_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

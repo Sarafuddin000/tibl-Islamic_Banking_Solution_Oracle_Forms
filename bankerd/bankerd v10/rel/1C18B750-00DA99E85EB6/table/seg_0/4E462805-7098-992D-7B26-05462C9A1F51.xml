@@ -40,6 +40,18 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DBCR_TYPE" id="32178E8F-56A6-38EE-27EE-C67EBEDFBB30">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 13:02:32 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="Transaction_Date" id="5E810106-B28C-9B5A-CC85-0527557CD956">
 <createdBy>New</createdBy>
 <createdTime>2022-12-05 08:01:03 UTC</createdTime>
@@ -67,8 +79,25 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A18E1546-D31B-82B3-A29E-E0D761C56550" referredColumn="B841FFF7-8C9E-24E2-326C-BF4FAD30CF7B"/>
+</associations>
+</Column>
+<Column name="Project_id" id="43D566E1-B907-EA8F-F3EE-A7546CD74130">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 11:07:44 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FC5C8D1-09D0-2C5C-B60C-911FB86125A8" referredColumn="F56F0686-C391-8CE4-2A03-A75411D425D0"/>
+</associations>
 </Column>
 <Column name="GL_Code" id="94EEEBC8-6F40-907D-E4A2-3C3F1986793E">
 <createdBy>Orbit</createdBy>
@@ -83,17 +112,6 @@
 <colAssociation fkAssociation="20054542-472F-4FFC-5583-9C69B7F4440D" referredColumn="9BC334FA-16B0-5158-4FB3-759DD830E585"/>
 </associations>
 </Column>
-<Column name="Amount" id="485BB5D7-2F6B-C20D-3EA4-16FA673F6939">
-<createdBy>New</createdBy>
-<createdTime>2022-12-05 08:01:03 UTC</createdTime>
-<ownerDesignName>bankerd v10</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="Narration" id="922A95D2-2D06-5F50-728B-AB9C37C86054">
 <createdBy>New</createdBy>
 <createdTime>2022-12-05 08:01:03 UTC</createdTime>
@@ -106,15 +124,27 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Current_balance" id="B617AAC9-A2EA-D938-DD93-C83510984FEC">
+<Column name="DBCR_Code" id="31A1E82C-F0C5-FBAA-BF43-09F043075E04">
 <createdBy>Admin</createdBy>
-<createdTime>2022-12-05 08:55:31 UTC</createdTime>
+<createdTime>2023-05-07 11:07:44 UTC</createdTime>
 <ownerDesignName>bankerd v10</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Amount" id="485BB5D7-2F6B-C20D-3EA4-16FA673F6939">
+<createdBy>New</createdBy>
+<createdTime>2022-12-05 08:01:03 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Dr_amount" id="D29AC116-C0AF-CCBD-2ED3-8AE41D24BAD0">
@@ -199,19 +229,19 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Chart_of_account_GL_Code" id="D37C9371-93C5-7102-64A4-47B7CFC48411">
-<createdBy>Admin</createdBy>
-<createdTime>2023-01-29 10:42:37 UTC</createdTime>
-<ownerDesignName>bankerd v10</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B99D7D80-FEFC-83C7-1896-9421209D50EF" name="Transaction_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 11:07:44 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="582C4811-AD4F-151A-ADEB-7C7233EDDBED"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="7263A3C1-9D29-EDED-BEDC-81EF1DFD343A" name="Transaction_COA_FK">
 <createdBy>Orbit</createdBy>
 <createdTime>2022-12-20 19:06:44 UTC</createdTime>
@@ -220,6 +250,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="94EEEBC8-6F40-907D-E4A2-3C3F1986793E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A906FF65-49A8-52E1-BACD-B728DC02E5DB" name="Transaction_Account_master_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 11:07:44 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="116868A7-53B8-08F1-2660-E013B57C9BCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9B91398-91E7-0737-CA42-77D7BFCAD466" name="Transaction_Project_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-07 11:07:44 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43D566E1-B907-EA8F-F3EE-A7546CD74130"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
