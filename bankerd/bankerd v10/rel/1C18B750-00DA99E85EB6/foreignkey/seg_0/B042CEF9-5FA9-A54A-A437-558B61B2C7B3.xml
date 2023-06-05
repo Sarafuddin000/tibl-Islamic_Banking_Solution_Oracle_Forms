@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B042CEF9-5FA9-A54A-A437-558B61B2C7B3" containerWithKeyObject="51505830-1413-D5EF-876F-8691CFD1ED15" localFKIndex="EDC23509-0BCD-50F1-8626-0E4A48262C1E" name="Profit_Rate_Account_type_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-05-29 10:39:03 UTC</createdTime>
+<ownerDesignName>bankerd v10</ownerDesignName>
+<referredTableLongName>Account_type</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1C3864B7-26EC-7F62-A6D3-32C2F10DF571</referredTableID>
+<keyObject>F3423CC0-AB56-5D0C-47F3-69F6A4DB282F</keyObject>
+<referredKeyID>F3423CC0-AB56-5D0C-47F3-69F6A4DB282F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Acc_type_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
